@@ -7,3 +7,8 @@ The project is written in `python` and uses `Amazon s3` for file storage and `Am
 ## Database Schema Design
 
 ![Our Database looks like the following](https://github.com/hamadalaqeel/data-warehouse-aws/blob/master/Database%20Schema.png)
+
+## Instructions
+* Update the `dwh.cfg` file with you Amazon Redshift cluster credentials and IAM role that can access the cluster.
+* Run python `create_tables.py` This will create the database and all the required tables.
+* Run python `etl.py` This will start pipeline which will read the data from files and populate the tables.
